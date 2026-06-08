@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kuis Analisis Jurnal — Algoritma Pemrograman</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+
+<div class="wrapper">
+
+  
+  <section id="slide-cover">
+    <div class="badge">📄 Presentasi Analisis Jurnal</div>
+    <h1 class="hero-title">Dasar Algoritma<br/>Pemrograman</h1>
+    <p class="hero-sub">Analisis jurnal "Mengidentifikasi Dasar Algoritma Pemrograman" oleh Erlianda Cibro & Yahfizham — Jurnal Ilmiah Sistem Informasi dan Ilmu Komputer, Vol.4 No.1 Tahun 2024</p>
+    <div class="journal-info">
+      <div class="ji-row"><span class="ji-label">Penulis</span><span class="ji-val">Erlianda Cibro & Yahfizham</span></div>
+      <div class="ji-row"><span class="ji-label">Jurnal</span><span class="ji-val">Jurnal Ilmiah Sistem Informasi & Ilmu Komputer</span></div>
+      <div class="ji-row" style="margin-bottom:0"><span class="ji-label">Volume</span><span class="ji-val">Vol. 4, No. 1, Tahun 2024</span></div>
+    </div>
+    <div class="team-block">
+      <div class="team-label">Disusun oleh Kelompok</div>
+      <div class="team-members">
+        <div class="member-chip">Fanny Eko Wicaksono <span>202422015</span></div>
+        <div class="member-chip">Hyanuar Bagus Andhira <span>202422017</span></div>
+      </div>
+    </div>
+    <button class="start-btn" onclick="goToSlide(1)">Mulai Presentasi →</button>
+  </section>
+
+  <section id="slide-1" class="slide">
+    <div class="section-tag">01 — Tujuan Penelitian</div>
+    <h2 class="section-title">Apa yang Ingin<br/>Dicapai Jurnal Ini?</h2>
+    <p class="section-desc">Jurnal ini bukan sekadar teori — ini adalah panduan fundamental bagi siapa pun yang ingin memahami logika di balik pemrograman.</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="ic-icon">🧠</div>
+        <div class="ic-title">Konsep Dasar Algoritma</div>
+        <div class="ic-text">Menjelaskan apa itu algoritma dan mengapa ia menjadi fondasi utama dalam dunia pemrograman komputer.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">📐</div>
+        <div class="ic-title">Bentuk Penyajian</div>
+        <div class="ic-text">Memperkenalkan tiga bentuk algoritma: deskriptif, pseudocode, dan flowchart beserta kegunaannya.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">🎯</div>
+        <div class="ic-title">Logika Sistematis</div>
+        <div class="ic-text">Membantu mahasiswa berpikir runtut dan sistematis dalam menyelesaikan masalah sebelum menulis kode.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">🏗️</div>
+        <div class="ic-title">Pondasi Pemrograman</div>
+        <div class="ic-text">Memberikan wawasan bahwa algoritma adalah pondasi yang harus dikuasai sebelum belajar bahasa pemrograman apapun.</div>
+      </div>
+    </div>
+    <div class="slide-nav">
+      <button class="slide-nav-btn" onclick="goToSlide(0)">← Kembali</button>
+      <button class="slide-nav-btn" onclick="goToSlide(2)">Metode Penelitian →</button>
+    </div>
+  </section>
+
+
+  <section id="slide-2" class="slide">
+    <div class="section-tag">02 — Metode Penelitian</div>
+    <h2 class="section-title">Bagaimana Cara<br/>Penelitiannya?</h2>
+    <p class="section-desc">Jurnal ini menggunakan pendekatan studi literatur — bukan eksperimen atau pembuatan aplikasi.</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="ic-icon">📚</div>
+        <div class="ic-title">Studi Literatur</div>
+        <div class="ic-text">Penulis mengumpulkan dan menganalisis data dari buku, jurnal ilmiah, artikel, dan media referensi lainnya yang relevan.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">🔍</div>
+        <div class="ic-title">Kajian Teori</div>
+        <div class="ic-text">Membandingkan dan mensintesis konsep algoritma dari berbagai sumber untuk menghasilkan pemahaman yang komprehensif.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">📋</div>
+        <div class="ic-title">Bukan Eksperimen</div>
+        <div class="ic-text">Penelitian ini murni kajian pustaka — tidak ada pengujian program, survei lapangan, atau pengembangan aplikasi.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">✅</div>
+        <div class="ic-title">Output: Teori</div>
+        <div class="ic-text">Hasil penelitian berupa pemahaman mendalam tentang konsep dasar algoritma yang dapat diterapkan dalam dunia pemrograman.</div>
+      </div>
+    </div>
+    <div class="slide-nav">
+      <button class="slide-nav-btn" onclick="goToSlide(1)">← Tujuan</button>
+      <button class="slide-nav-btn" onclick="goToSlide(3)">Kaitan dengan Coding →</button>
+    </div>
+  </section>
+
+
+  <section id="slide-3" class="slide">
+    <div class="section-tag">03 — Kaitan dengan Pemrograman</div>
+    <h2 class="section-title">Seberapa Penting<br/>untuk Programmer?</h2>
+    <p class="section-desc">Hubungannya sangat fundamental. Algoritma bukan hanya teori — ia adalah tulang punggung setiap baris kode yang kamu tulis.</p>
+    <div class="stat-row">
+      <div class="stat-box"><div class="stat-num">100%</div><div class="stat-lbl">Relevansi dengan coding modern</div></div>
+      <div class="stat-box" style="--purple:#2dd4bf"><div class="stat-num">3</div><div class="stat-lbl">Bentuk penyajian algoritma</div></div>
+      <div class="stat-box" style="--purple:#ec4899"><div class="stat-num">5+</div><div class="stat-lbl">Domain pemrograman tercakup</div></div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="ic-icon">⚠️</div>
+        <div class="ic-title">Tanpa Algoritma</div>
+        <div class="ic-text">Program menjadi kacau, logika sulit dipahami, debugging memakan waktu lama, dan kode tidak efisien untuk dikembangkan.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">🌐</div>
+        <div class="ic-title">Di Semua Domain</div>
+        <div class="ic-text">Algoritma dipakai di web development, mobile app, AI, game development, dan sistem informasi secara langsung.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">📊</div>
+        <div class="ic-title">Big O Notation</div>
+        <div class="ic-text">Konsep kompleksitas algoritma seperti Big O membantu programmer menilai efisiensi kode sebelum dijalankan di sistem nyata.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">⚡</div>
+        <div class="ic-title">Divide & Conquer</div>
+        <div class="ic-text">Strategi pemecahan masalah seperti Divide and Conquer dan Dynamic Programming langsung digunakan dalam coding nyata.</div>
+      </div>
+    </div>
+    <div class="slide-nav">
+      <button class="slide-nav-btn" onclick="goToSlide(2)">← Metode</button>
+      <button class="slide-nav-btn" onclick="goToSlide(4)">Perbandingan Jurnal →</button>
+    </div>
+  </section>
+
+
+  <section id="slide-4" class="slide">
+    <div class="section-tag">04 — Perbandingan Jurnal</div>
+    <h2 class="section-title">Jurnal Utama vs<br/>Jurnal Pembanding</h2>
+    <p class="section-desc">Perbandingan dengan jurnal "Pembelajaran Dasar Algoritma Menggunakan El-Goritma Berbasis Web" (G.G. Maulana, 2017).</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>Aspek</th>
+            <th style="color:var(--purple)">Jurnal Utama (2024)</th>
+            <th style="color:var(--teal)">Jurnal Pembanding (2017)</th>
+          </tr>
+        </thead>
+<tbody>
+    <tr onclick="this.classList.toggle('active')">
+      <td>Fokus</td>
+      <td>Konsep dasar algoritma</td>
+      <td>Media pembelajaran berbasis web</td>
+    </tr>
+    <tr onclick="this.classList.toggle('active')">
+      <td>Metode</td>
+      <td>Studi literatur</td>
+      <td>Pengembangan sistem/aplikasi</td>
+    </tr>
+    <tr onclick="this.classList.toggle('active')">
+      <td>Output</td>
+      <td>Pemahaman teori</td>
+      <td>Platform pembelajaran web</td>
+    </tr>
+    <tr onclick="this.classList.toggle('active')">
+      <td>Pendekatan</td>
+      <td>Teoritis</td>
+      <td>Praktis & implementatif</td>
+    </tr>
+    <tr onclick="this.classList.toggle('active')">
+      <td>Kaitan coding</td>
+      <td>Dasar logika coding</td>
+      <td>Alat bantu belajar coding</td>
+    </tr>
+    <tr onclick="this.classList.toggle('active')">
+      <td>Tujuan utama</td>
+      <td>Memahami algoritma</td>
+      <td>Membantu belajar interaktif</td>
+    </tr>
+  </tbody>
+      </table>
+    </div>
+    <div class="info-grid" style="margin-top:8px">
+      <div class="info-card">
+        <div class="ic-icon">🤝</div>
+        <div class="ic-title">Kesamaan</div>
+        <div class="ic-text">Sama-sama membahas algoritma dasar, bertujuan membantu mahasiswa, dan menganggap algoritma sebagai pondasi pemrograman.</div>
+      </div>
+      <div class="info-card">
+        <div class="ic-icon">🔀</div>
+        <div class="ic-title">Perbedaan Utama</div>
+        <div class="ic-text">Jurnal utama menghasilkan teori, jurnal pembanding menghasilkan produk berupa platform web pembelajaran yang bisa langsung digunakan.</div>
+      </div>
+    </div>
+    <div class="slide-nav">
+      <button class="slide-nav-btn" onclick="goToSlide(3)">← Kaitan Coding</button>
+      <button class="slide-nav-btn" onclick="goToSlide(5)">Kesimpulan →</button>
+    </div>
+  </section>
+
+  <section id="slide-5" class="slide">
+  <div class="section-tag">05 — Kesimpulan</div>
+  <h2 class="section-title">Kesimpulan<br/>Analisis Jurnal</h2>
+
+  <p class="section-desc">
+    Berdasarkan hasil analisis terhadap jurnal utama dan jurnal pembanding,
+    dapat disimpulkan bahwa algoritma merupakan fondasi utama dalam
+    pemrograman yang membantu seseorang berpikir logis, sistematis,
+    dan terstruktur dalam menyelesaikan masalah.
+  </p>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="ic-icon">🧠</div>
+      <div class="ic-title">Algoritma sebagai Dasar</div>
+      <div class="ic-text">
+        Algoritma menjadi dasar sebelum proses coding karena menentukan
+        logika dan langkah penyelesaian masalah secara sistematis.
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="ic-icon">📚</div>
+      <div class="ic-title">Penting untuk Mahasiswa</div>
+      <div class="ic-text">
+        Pemahaman algoritma membantu mahasiswa mengembangkan kemampuan
+        berpikir kritis dan menyusun solusi yang efektif.
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="ic-icon">🌐</div>
+      <div class="ic-title">Media Pembelajaran</div>
+      <div class="ic-text">
+        Jurnal pembanding menunjukkan bahwa media pembelajaran berbasis
+        web dapat membantu meningkatkan pemahaman konsep algoritma.
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="ic-icon">🚀</div>
+      <div class="ic-title">Relevansi Masa Kini</div>
+      <div class="ic-text">
+        Algoritma tetap relevan dalam berbagai bidang seperti web,
+        mobile, AI, game development, dan sistem informasi.
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-nav">
+    <button class="slide-nav-btn" onclick="goToSlide(4)">← Perbandingan</button>
+    <button class="slide-nav-btn" onclick="goToSlide(6)">Kuis →</button>
+  </div>
+</section>
+
+  <section id="slide-6" class="slide">
+    <div class="section-tag">06 — Uji Pemahaman</div>
+    <h2 class="section-title">Kuis Interaktif</h2>
+    <p class="section-desc">Jawab pertanyaan berikut. Setiap jawaban disertai penjelasan lengkap!</p>
+
+    <div class="quiz-progress-wrap">
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="qProgressFill" style="width:10%"></div></div>
+      <div class="quiz-count" id="qCounter">1 / 20</div>
+    </div>
+
+    <div id="quizArea"></div>
+
+    <div class="quiz-nav">
+      <button class="next-btn" id="nextQuizBtn" onclick="nextQuestion()">Soal Berikutnya →</button>
+    </div>
+
+    <div class="slide-nav" style="margin-top:32px">
+      <button class="slide-nav-btn" onclick="goToSlide(5)">← Kesimpulan</button>
+      <button class="slide-nav-btn" id="toResultBtn" style="display:none" onclick="goToSlide(7)">Lihat Hasil →</button>
+    </div>
+  </section>
+
+
+  <section id="slide-7" class="slide" id="slide-result">
+    <div style="text-align:center; padding:40px 0 0;">
+      <div class="section-tag">Hasil Kuis</div>
+      <div class="result-score" id="finalScore">0/20</div>
+      <div class="result-label" id="finalPct"></div>
+      <div class="result-stars" id="finalStars"></div>
+      <div class="result-msg" id="finalMsg"></div>
+      <div class="result-actions">
+        <button class="btn-outline" onclick="restartQuiz()">🔄 Ulangi Kuis</button>
+        <button class="btn-primary" onclick="goToSlide(0)">🏠 Ke Halaman Utama</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<div class="nav-dots" id="navDots"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
