@@ -318,4 +318,23 @@ function restartQuiz() {
   goToSlide(5);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const rows = document.querySelectorAll(".clickable-row");
+
+  rows.forEach(row => {
+    row.addEventListener("click", () => {
+      const targetId = row.getAttribute("data-target");
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        // Switch class hidden (buka / tutup)
+        targetElement.classList.toggle("hidden");
+        
+        // Tambahkan efek visual aktif pada baris utama yang diklik
+        row.classList.toggle("row-active");
+      }
+    });
+  });
+});
+
 renderQuestion();
