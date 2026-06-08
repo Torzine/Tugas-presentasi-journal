@@ -231,3 +231,44 @@
     .hero-sub { font-size:14px; }
     table.compare th, table.compare td { font-size:12px; padding:10px 12px; }
   }
+    tr.clickable-row {
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    tr.clickable-row:hover {
+      background: rgba(255, 255, 255, 0.03) !important;
+    }
+    
+    tr.clickable-row td::after {
+      content: "";
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+      margin-top: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    tr.clickable-row.active td:nth-child(2)::after,
+    tr.clickable-row.active td:nth-child(3)::after {
+      max-height: 150px;
+      opacity: 1;
+      margin-top: 8px;
+      padding-top: 4px;
+      border-top: 1px dashed rgba(255,255,255,0.1);
+    }
+    tr.clickable-row.active:nth-child(1) td:nth-child(2)::after { content: "Fokus pada identifikasi landasan teori, logika berpikir, dan instruksi tertulis."; }
+    tr.clickable-row.active:nth-child(1) td:nth-child(3)::after { content: "Fokus pada perancangan media digital interaktif untuk mempermudah visualisasi data."; }
+    tr.clickable-row.active:nth-child(2) td:nth-child(2)::after { content: "Menggunakan studi kepustakaan dengan menelaah 13 jurnal ilmiah dan 2 buku teks."; }
+    tr.clickable-row.active:nth-child(2) td:nth-child(3)::after { content: "Menggunakan metode rekayasa perangkat lunak untuk membangun platform sistem web."; }
+    tr.clickable-row.active:nth-child(3) td:nth-child(2)::after { content: "Menghasilkan bagan pemetaan konsep (Big O, notasi, pseudocode, flowchart)."; }
+    tr.clickable-row.active:nth-child(3) td:nth-child(3)::after { content: "Menghasilkan produk aplikasi web nyata siap pakai bernama El-Goritma."; }
+    tr.clickable-row.active:nth-child(4) td:nth-child(2)::after { content: "Pendekatan konseptual akademis untuk membangun mindset problem-solving."; }
+    tr.clickable-row.active:nth-child(4) td:nth-child(3)::after { content: "Pendekatan teknis/praktek langsung menggunakan simulasi berbasis komputer."; }
+    tr.clickable-row.active:nth-child(5) td:nth-child(2)::after { content: "Sebagai blueprint dasar sebelum menulis baris sintaks pemrograman komputer."; }
+    tr.clickable-row.active:nth-child(5) td:nth-child(3)::after { content: "Sebagai jembatan interaktif untuk mengurangi kesalahan logika saat latihan coding."; }
+    tr.clickable-row.active:nth-child(6) td:nth-child(2)::after { content: "Melatih mahasiswa menyusun langkah penyelesaian masalah secara efisien."; }
+    tr.clickable-row.active:nth-child(6) td:nth-child(3)::after { content: "Meningkatkan ketertarikan, pemahaman mandiri, dan keaktifan mahasiswa."; }
