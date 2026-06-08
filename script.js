@@ -32,6 +32,9 @@ function goToSlide(idx) {
   if(idx === 5) { qIndex = 0; score = 0; answered = false; setTimeout(renderQuestion, 0); }
 }
 
+function toggleRow(row) {
+  row.classList.toggle('active');
+}
 
 (function(){
   document.querySelectorAll('section').forEach(s => s.style.display='none');
@@ -39,9 +42,6 @@ function goToSlide(idx) {
   document.getElementById('slide-cover').style.flexDirection='column';
 })();
 
-function toggleRow(row) {
-  row.classList.toggle('active');
-}
 
 const questions = [
   {
