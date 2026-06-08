@@ -39,6 +39,9 @@ function goToSlide(idx) {
   document.getElementById('slide-cover').style.flexDirection='column';
 })();
 
+function toggleRow(row) {
+  row.classList.toggle('active');
+}
 
 const questions = [
   {
